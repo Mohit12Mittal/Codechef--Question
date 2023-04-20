@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) 
+{
+    int num;
+    scanf("%d",&num);
+    for(int i=0;i<num;i++)
+    {
+        int n,k,m;
+        int count=0;
+        scanf("%d%d",&n,&k);
+        int A[n];
+        for(int i=0;i<n;i++)
+        {
+            scanf("%d",&A[i]);
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(A[i]>k)
+            {
+                count++;
+            }
+        }
+        printf("%d\n",count);
+    }
+	return 0;
+}
+
