@@ -1,0 +1,34 @@
+#include <stdio.h>
+int max(int a,int b)
+{
+    if(a>b)
+    {
+        return a;
+    }
+    return b;
+}
+int main(void) {
+    int num;
+    scanf("%d",&num);
+    int pa,pb,qa,qb;
+    for(int i=0;i<num;i++)
+    {
+        scanf("%d%d%d%d",&pa,&pb,&qa,&qb);
+    int maxp=max(pa,pb);
+    int maxq=max(qa,qb);
+     if(maxp>maxq)
+        {
+            printf("Q\n");
+        }
+        else if(maxq>maxp)
+        {
+            printf("P\n");
+        }
+        else
+        {
+            printf("TIE\n");
+        }
+    }
+		return 0;
+}
+
